@@ -52,7 +52,6 @@ header {
 .navbar ul li a:hover {
     color: #38bdf8;
 }
-
 /* Home Section */
 .hero {
     min-height: 450px;
@@ -60,13 +59,31 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 50px 20px;
+    gap: 60px;
+    padding: 50px 8%;
     color: white;
 }
 
+/* Profile Logo */
+.profile-logo {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: #38bdf8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    border: 5px solid #38bdf8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 .hero-content {
-    max-width: 700px;
+    max-width: 600px;
+    text-align: left;
 }
 
 .hero h1 {
