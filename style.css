@@ -1,0 +1,270 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #172554;
+    padding: 18px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Home Section */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #38bdf8;
+    color: #172554;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Common Section Styling */
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #2563eb;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    max-width: 850px;
+    margin: auto;
+    text-align: left;
+}
+
+/* S Logo */
+.profile-logo {
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: #38bdf8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    border: 5px solid #38bdf8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-content p {
+    max-width: 550px;
+    font-size: 17px;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+    );
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #172554;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact-info {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 12px 0;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+}
